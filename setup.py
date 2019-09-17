@@ -15,10 +15,11 @@ with open(path.join(here, 'LICENSE'), encoding='utf-8') as f:
 
 setup(
     name='posetf',
-    version='0.1.0',
+    version='0.1.1',
     description='Pose Transformer',
     url='https://github.com/hiro-ya/PoseTransformer',
     author='hiro-ya',
+    author_email='dev.hiro.ya@gmail.com',
     license=_license,
     packages=['posetf'],
     install_requires=['pyquaternion', 'numpy'],
