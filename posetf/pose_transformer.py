@@ -35,11 +35,14 @@ class PoseTF(object):
 
     @classmethod
     def dump_transform_factors(cls, file_path, transform_factors):
+        if len(transform_factors) == 0:
+            return False
         with open(file_path, 'w') as f:
             writer = csv.writer(f)
             writer.writerow(TRANSFORM_FACTORS_CSV_HEADER.split(','))
             for transform_factor in transform_factors:
                 writer.writerow(cls.serialize_transform_factor(transform_factor))
+        return True
 
     @classmethod
     def load_transform_factors(cls, file_path):
