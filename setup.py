@@ -6,7 +6,7 @@ from setuptools import setup
 
 setup(
     name='posetf',
-    version='0.1.2',
+    version='0.1.3',
     description='Pose Transformer',
     url='https://github.com/hiro-ya/PoseTransformer',
     author='hiro-ya',
